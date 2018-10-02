@@ -39,4 +39,4 @@ COPY ./docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-CMD ["/usr/bin/rg-listener -config=/etc/railgun/railgun.conf"]
+CMD ["/usr/bin/rg-listener","-config=/etc/railgun/railgun.conf"]
